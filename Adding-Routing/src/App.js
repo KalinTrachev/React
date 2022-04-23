@@ -8,12 +8,8 @@ function App() {
   return <div>
     <Routes>
       <Route path='/' element={<AllMeetupsPage />} />
-      <Route path='/new-meetup'>
-        <NewMeetupPage />
-      </Route>
-      <Route path='/favorites'>
-        <FavoritesPage />
-      </Route>
+      <Route path='/new-meetup' element={<NewMeetupPage />} />
+      <Route path='/favorites' element={<FavoritesPage />} />
     </Routes>
 
   </div>;
